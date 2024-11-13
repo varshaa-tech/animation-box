@@ -1,0 +1,49 @@
+.bg{
+    height: 600px;
+    width: 600px;
+    background-color: black;
+}
+.box{
+    padding: 20px;
+    height: 150px;
+    width: 150px;
+    background-color:black;
+    color: black;
+    border-color: bisque;
+    font-family: cursive;
+    transition: transform 1s;
+}
+.bg:hover .box{
+
+    /* transform: translateX(300px); */
+    animation: left-to-right 5s ease-in  forwards infinite alternate ;
+}
+@keyframes left-to-right {
+    0%{
+        transform: translateX(00px) ;
+        background-color: red;
+        color: beige;
+    }
+    20%{
+        transform: translateX(300px);
+        background-color: yellow;
+        color: beige;
+    }
+    50%{
+        transform: translateX(300px) translateY(300px);
+        background-color: rgb(30, 255, 0);
+        color: beige;
+    }
+
+    75%{
+        background-color: rgb(255, 0, 0);
+        color: beige;
+        transform: translateY(300px) ;
+    }
+    100%{
+        background-color: blue;
+        color: beige;
+        transform: translateY(-100px) ;
+    }
+    
+}
